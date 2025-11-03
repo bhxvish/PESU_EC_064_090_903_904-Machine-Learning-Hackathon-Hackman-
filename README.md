@@ -98,13 +98,21 @@ Final Score = (Success Rate * 2000)
 
 3. **Run the notebook**
    ```bash
-   jupyter notebook ML_DemoO.ipynb
+   Jupyter Notebook ML_DemoO.ipynb
    ```
 
-4. **Train and Evaluate**
-   - Train the **HMM** on the corpus.
-   - Run the **RL agent** in the Hangman environment.
-   - View metrics and plots (reward curves, success rate, etc.).
+4. **To run the model directly, use this model and run the code** 
+with open("test.txt", "r") as f:
+    test_words = [w.strip().lower() for w in f.readlines() if w.strip()]
+
+win_rate, avg_wrong, avg_repeated = evaluate_ensemble(ensemble, adjuster, test_words[:2000])
+
+final_score = (win_rate * 2000) - (avg_wrong * len(test_words) * 5) - (avg_repeated * len(test_words) * 2)
+print(f"\n✅ FINAL SCORE EVALUATION")
+print(f"Win Rate: {win_rate*100:.2f}%")
+print(f"Avg Wrong: {avg_wrong:.2f}")
+print(f"Avg Repeated: {avg_repeated:.2f}")
+print(f"Final Score: {final_score:.2f}")
 
 ---
 
@@ -146,6 +154,7 @@ Hackman-ML-Agent/
 **Course:** UE23CS352A – Machine Learning Hackathon  
 **Department:** Computer Science and Engineering (AIML)
 **Team:** 
+
 S BHAVISH (PES2UG23AM903)
           
 Saiprasanna (PES2UG23AM090)
