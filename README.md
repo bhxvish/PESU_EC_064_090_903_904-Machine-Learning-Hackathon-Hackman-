@@ -146,13 +146,13 @@ Hackman-ML-Agent/
 **Course:** UE23CS352A – Machine Learning Hackathon  
 **Department:** Computer Science and Engineering (AIML)
 **Team:** 
-          S BHAVISH (PES2UG23AM903)
-
-          Saiprasanna (PES2UG23AM090)
+S BHAVISH (PES2UG23AM903)
           
-          N Yashaswini (PES2UG23AM064)
+Saiprasanna (PES2UG23AM090)
           
-          Madhulatha (PES2UG23AM904)
+N Yashaswini (PES2UG23AM064)
+          
+Madhulatha (PES2UG23AM904)
 
 ---
 
