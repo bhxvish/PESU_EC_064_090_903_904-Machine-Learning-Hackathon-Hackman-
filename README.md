@@ -109,7 +109,7 @@ Final Score = (Success Rate * 2000)
 ---
 
 
-## 🔍 Key Insights
+## Key Insights
 
 - **HMMs** capture letter transition patterns effectively for word structure modeling.  
 - **RL exploration** (ε-greedy) is crucial for learning optimal guessing strategies.  
