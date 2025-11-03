@@ -105,14 +105,14 @@ Final Score = (Success Rate * 2000)
 with open("test.txt", "r") as f:
     test_words = [w.strip().lower() for w in f.readlines() if w.strip()]
 
-win_rate, avg_wrong, avg_repeated = evaluate_ensemble(ensemble, adjuster, test_words[:2000])
-
-final_score = (win_rate * 2000) - (avg_wrong * len(test_words) * 5) - (avg_repeated * len(test_words) * 2)
-print(f"\n✅ FINAL SCORE EVALUATION")
-print(f"Win Rate: {win_rate*100:.2f}%")
-print(f"Avg Wrong: {avg_wrong:.2f}")
-print(f"Avg Repeated: {avg_repeated:.2f}")
-print(f"Final Score: {final_score:.2f}")
+    win_rate, avg_wrong, avg_repeated = evaluate_ensemble(ensemble, adjuster, test_words[:2000])
+    
+    final_score = (win_rate * 2000) - (avg_wrong * len(test_words) * 5) - (avg_repeated * len(test_words) * 2)
+    print(f"\n✅ FINAL SCORE EVALUATION")
+    print(f"Win Rate: {win_rate*100:.2f}%")
+    print(f"Avg Wrong: {avg_wrong:.2f}")
+    print(f"Avg Repeated: {avg_repeated:.2f}")
+    print(f"Final Score: {final_score:.2f}")
 
 ---
 
